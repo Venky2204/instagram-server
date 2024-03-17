@@ -42,7 +42,7 @@ router.post('/signup',(req,res)=>{
     })
 })
 
-router.post('https://instagram-client-1.onrender.com/signin',(req,res)=>{
+router.post('/signin',(req,res)=>{
     const {email,password} = req.body
     if(!email || !password){
         res.status(422).json({error:"please add email or password"})
